@@ -16,6 +16,7 @@
 		D94AACA328859C9E00853AA8 /* IntroductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94AACA228859C9E00853AA8 /* IntroductionTests.swift */; };
 		D94AACAD28859C9E00853AA8 /* IntroductionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94AACAC28859C9E00853AA8 /* IntroductionUITests.swift */; };
 		D94AACAF28859C9E00853AA8 /* IntroductionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94AACAE28859C9E00853AA8 /* IntroductionUITestsLaunchTests.swift */; };
+		D9FDF0682888343C003664FE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FDF0672888343C003664FE /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D94AACA828859C9E00853AA8 /* IntroductionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroductionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94AACAC28859C9E00853AA8 /* IntroductionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionUITests.swift; sourceTree = "<group>"; };
 		D94AACAE28859C9E00853AA8 /* IntroductionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9FDF0672888343C003664FE /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D94AAC9428859C9E00853AA8 /* Assets.xcassets */,
 				D94AAC9628859C9E00853AA8 /* LaunchScreen.storyboard */,
 				D94AAC9928859C9E00853AA8 /* Info.plist */,
+				D9FDF0672888343C003664FE /* View.xib */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FDF0682888343C003664FE /* View.xib in Resources */,
 				D94AAC9828859C9E00853AA8 /* LaunchScreen.storyboard in Resources */,
 				D94AAC9528859C9E00853AA8 /* Assets.xcassets in Resources */,
 				D94AAC9328859C9C00853AA8 /* Main.storyboard in Resources */,

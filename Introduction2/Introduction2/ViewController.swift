@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signInTapped(_ sender: Any) {
-        print("signIn email: \(emailTextField.text)")
+        print("signIn email: \(String(describing: emailTextField.text))")
         emailTextField.resignFirstResponder()
     }
     

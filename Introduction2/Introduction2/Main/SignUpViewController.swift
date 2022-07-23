@@ -31,6 +31,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUpTapped(_ sender: Any) {
         print("User \(String(describing: fullNameTextField.text!)) register with email \(String(describing: emailTextField.text!))")
-//            fullNameTextField.resignFirstResponder()
+        let vc = OtpViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -10,13 +10,19 @@
 		55F462DB288BB6D500F2B97E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F462DA288BB6D500F2B97E /* SignUpViewController.swift */; };
 		D9654650288AA03700BC3F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965464F288AA03700BC3F15 /* AppDelegate.swift */; };
 		D9654652288AA03700BC3F15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9654651288AA03700BC3F15 /* SceneDelegate.swift */; };
-		D9654654288AA03700BC3F15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9654653288AA03700BC3F15 /* ViewController.swift */; };
+		D9654654288AA03700BC3F15 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9654653288AA03700BC3F15 /* SignInViewController.swift */; };
 		D9654657288AA03700BC3F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9654655288AA03700BC3F15 /* Main.storyboard */; };
 		D9654659288AA03800BC3F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9654658288AA03800BC3F15 /* Assets.xcassets */; };
 		D965465C288AA03800BC3F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D965465A288AA03800BC3F15 /* LaunchScreen.storyboard */; };
 		D9654667288AA03800BC3F15 /* Introduction2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9654666288AA03800BC3F15 /* Introduction2Tests.swift */; };
 		D9654671288AA03800BC3F15 /* Introduction2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9654670288AA03800BC3F15 /* Introduction2UITests.swift */; };
 		D9654673288AA03800BC3F15 /* Introduction2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9654672288AA03800BC3F15 /* Introduction2UITestsLaunchTests.swift */; };
+		D98D2F77288BF1580077114D /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98D2F76288BF1580077114D /* Dashboard.storyboard */; };
+		D98D2F7B288BF3E10077114D /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D2F79288BF3E10077114D /* OtpViewController.swift */; };
+		D98D2F7C288BF3E10077114D /* OtpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98D2F7A288BF3E10077114D /* OtpViewController.xib */; };
+		D98D2F7E288BF4C40077114D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D2F7D288BF4C40077114D /* HomeViewController.swift */; };
+		D98D2F82288BF77A0077114D /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D2F80288BF77A0077114D /* CardViewCell.swift */; };
+		D98D2F83288BF77A0077114D /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98D2F81288BF77A0077114D /* CardViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +47,7 @@
 		D965464C288AA03700BC3F15 /* Introduction2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Introduction2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D965464F288AA03700BC3F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9654651288AA03700BC3F15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9654653288AA03700BC3F15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9654653288AA03700BC3F15 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D9654656288AA03700BC3F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9654658288AA03800BC3F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D965465B288AA03800BC3F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		D965466C288AA03800BC3F15 /* Introduction2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Introduction2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9654670288AA03800BC3F15 /* Introduction2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction2UITests.swift; sourceTree = "<group>"; };
 		D9654672288AA03800BC3F15 /* Introduction2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D98D2F76288BF1580077114D /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		D98D2F79288BF3E10077114D /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
+		D98D2F7A288BF3E10077114D /* OtpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtpViewController.xib; sourceTree = "<group>"; };
+		D98D2F7D288BF4C40077114D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D98D2F80288BF77A0077114D /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		D98D2F81288BF77A0077114D /* CardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +113,13 @@
 		D965464E288AA03700BC3F15 /* Introduction2 */ = {
 			isa = PBXGroup;
 			children = (
-				D965464F288AA03700BC3F15 /* AppDelegate.swift */,
-				D9654651288AA03700BC3F15 /* SceneDelegate.swift */,
-				D9654653288AA03700BC3F15 /* ViewController.swift */,
-				D9654655288AA03700BC3F15 /* Main.storyboard */,
+				D98D2F78288BF3CE0077114D /* Otp */,
+				D98D2F75288BF13F0077114D /* Dashboard */,
+				D98D2F74288BF0FF0077114D /* Main */,
+				D98D2F73288BF0ED0077114D /* AppDelegate */,
 				D9654658288AA03800BC3F15 /* Assets.xcassets */,
 				D965465A288AA03800BC3F15 /* LaunchScreen.storyboard */,
 				D965465D288AA03800BC3F15 /* Info.plist */,
-				55F462DA288BB6D500F2B97E /* SignUpViewController.swift */,
 			);
 			path = Introduction2;
 			sourceTree = "<group>";
@@ -128,6 +139,61 @@
 				D9654672288AA03800BC3F15 /* Introduction2UITestsLaunchTests.swift */,
 			);
 			path = Introduction2UITests;
+			sourceTree = "<group>";
+		};
+		D98D2F73288BF0ED0077114D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D9654651288AA03700BC3F15 /* SceneDelegate.swift */,
+				D965464F288AA03700BC3F15 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D98D2F74288BF0FF0077114D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D9654653288AA03700BC3F15 /* SignInViewController.swift */,
+				55F462DA288BB6D500F2B97E /* SignUpViewController.swift */,
+				D9654655288AA03700BC3F15 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D98D2F75288BF13F0077114D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D98D2F7F288BF7540077114D /* tableViewCell */,
+				D98D2F76288BF1580077114D /* Dashboard.storyboard */,
+				D98D2F7D288BF4C40077114D /* HomeViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		D98D2F78288BF3CE0077114D /* Otp */ = {
+			isa = PBXGroup;
+			children = (
+				D98D2F79288BF3E10077114D /* OtpViewController.swift */,
+				D98D2F7A288BF3E10077114D /* OtpViewController.xib */,
+			);
+			path = Otp;
+			sourceTree = "<group>";
+		};
+		D98D2F7F288BF7540077114D /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D98D2F84288BF8090077114D /* Card */,
+			);
+			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		D98D2F84288BF8090077114D /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				D98D2F81288BF77A0077114D /* CardViewCell.xib */,
+				D98D2F80288BF77A0077114D /* CardViewCell.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +300,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98D2F83288BF77A0077114D /* CardViewCell.xib in Resources */,
 				D965465C288AA03800BC3F15 /* LaunchScreen.storyboard in Resources */,
 				D9654659288AA03800BC3F15 /* Assets.xcassets in Resources */,
 				D9654657288AA03700BC3F15 /* Main.storyboard in Resources */,
+				D98D2F7C288BF3E10077114D /* OtpViewController.xib in Resources */,
+				D98D2F77288BF1580077114D /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9654654288AA03700BC3F15 /* ViewController.swift in Sources */,
+				D98D2F7B288BF3E10077114D /* OtpViewController.swift in Sources */,
+				D9654654288AA03700BC3F15 /* SignInViewController.swift in Sources */,
 				D9654650288AA03700BC3F15 /* AppDelegate.swift in Sources */,
 				55F462DB288BB6D500F2B97E /* SignUpViewController.swift in Sources */,
 				D9654652288AA03700BC3F15 /* SceneDelegate.swift in Sources */,
+				D98D2F7E288BF4C40077114D /* HomeViewController.swift in Sources */,
+				D98D2F82288BF77A0077114D /* CardViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

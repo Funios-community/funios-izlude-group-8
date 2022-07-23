@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signInTapped(_ sender: Any) {
-        print("signIn email: \(String(describing: emailTextField.text))")
+        let sb = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc: UIViewController = sb.instantiateViewController(withIdentifier: "Tab")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
         emailTextField.resignFirstResponder()
     }
     

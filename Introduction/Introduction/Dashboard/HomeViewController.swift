@@ -43,3 +43,12 @@ extension HomeViewController: UITableViewDelegate {
         present(popup, animated: true)
     }
 }
+
+extension HomeViewController {
+    enum StatusActionType: String {
+        case noAction = "noAction"
+        case singleMainAction = "singleMainAction"
+        case singleSecondaryAction = "singleSecondaryAction"
+        case dualAction = "dualAction"
+    }
+}

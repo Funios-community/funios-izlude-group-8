@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		559DBD6C289790AD0031A37F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559DBD6B289790AD0031A37F /* SettingsViewController.swift */; };
+		559DBD6F289792830031A37F /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559DBD6D289792820031A37F /* SettingsTableViewCell.swift */; };
+		559DBD70289792830031A37F /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 559DBD6E289792830031A37F /* SettingsTableViewCell.xib */; };
+		559DBD732897E8610031A37F /* LogoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559DBD712897E8610031A37F /* LogoutTableViewCell.swift */; };
+		559DBD742897E8610031A37F /* LogoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 559DBD722897E8610031A37F /* LogoutTableViewCell.xib */; };
 		55F462DB288BB6D500F2B97E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F462DA288BB6D500F2B97E /* SignUpViewController.swift */; };
 		D9654650288AA03700BC3F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965464F288AA03700BC3F15 /* AppDelegate.swift */; };
 		D9654652288AA03700BC3F15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9654651288AA03700BC3F15 /* SceneDelegate.swift */; };
@@ -43,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		559DBD6B289790AD0031A37F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		559DBD6D289792820031A37F /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		559DBD6E289792830031A37F /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		559DBD712897E8610031A37F /* LogoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutTableViewCell.swift; sourceTree = "<group>"; };
+		559DBD722897E8610031A37F /* LogoutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutTableViewCell.xib; sourceTree = "<group>"; };
 		55F462DA288BB6D500F2B97E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D965464C288AA03700BC3F15 /* Introduction2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Introduction2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D965464F288AA03700BC3F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		557BD2A528961369000D247D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				559DBD6D289792820031A37F /* SettingsTableViewCell.swift */,
+				559DBD6E289792830031A37F /* SettingsTableViewCell.xib */,
+				559DBD712897E8610031A37F /* LogoutTableViewCell.swift */,
+				559DBD722897E8610031A37F /* LogoutTableViewCell.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		D9654643288AA03700BC3F15 = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +184,10 @@
 		D98D2F75288BF13F0077114D /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				D98D2F7F288BF7540077114D /* tableViewCell */,
 				D98D2F76288BF1580077114D /* Dashboard.storyboard */,
 				D98D2F7D288BF4C40077114D /* HomeViewController.swift */,
+				559DBD6B289790AD0031A37F /* SettingsViewController.swift */,
+				D98D2F7F288BF7540077114D /* tableViewCell */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -182,6 +204,7 @@
 		D98D2F7F288BF7540077114D /* tableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				557BD2A528961369000D247D /* Settings */,
 				D98D2F84288BF8090077114D /* Card */,
 			);
 			path = tableViewCell;
@@ -300,10 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559DBD70289792830031A37F /* SettingsTableViewCell.xib in Resources */,
 				D98D2F83288BF77A0077114D /* CardViewCell.xib in Resources */,
 				D965465C288AA03800BC3F15 /* LaunchScreen.storyboard in Resources */,
 				D9654659288AA03800BC3F15 /* Assets.xcassets in Resources */,
 				D9654657288AA03700BC3F15 /* Main.storyboard in Resources */,
+				559DBD742897E8610031A37F /* LogoutTableViewCell.xib in Resources */,
 				D98D2F7C288BF3E10077114D /* OtpViewController.xib in Resources */,
 				D98D2F77288BF1580077114D /* Dashboard.storyboard in Resources */,
 			);
@@ -331,12 +356,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98D2F7B288BF3E10077114D /* OtpViewController.swift in Sources */,
+				559DBD732897E8610031A37F /* LogoutTableViewCell.swift in Sources */,
 				D9654654288AA03700BC3F15 /* SignInViewController.swift in Sources */,
+				559DBD6F289792830031A37F /* SettingsTableViewCell.swift in Sources */,
 				D9654650288AA03700BC3F15 /* AppDelegate.swift in Sources */,
 				55F462DB288BB6D500F2B97E /* SignUpViewController.swift in Sources */,
 				D9654652288AA03700BC3F15 /* SceneDelegate.swift in Sources */,
 				D98D2F7E288BF4C40077114D /* HomeViewController.swift in Sources */,
 				D98D2F82288BF77A0077114D /* CardViewCell.swift in Sources */,
+				559DBD6C289790AD0031A37F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

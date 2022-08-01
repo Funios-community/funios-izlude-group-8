@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="ZDP-tn-CBL" customClass="LogoutTableViewCell" customModule="Introduction2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZDP-tn-CBL" id="GX7-FU-znr">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="DIq-RB-1S9">
+                        <rect key="frame" x="16" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="4Hj-LF-v7D"/>
+                            <constraint firstAttribute="width" constant="25" id="c0y-Lo-PbF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybI-Vl-eyi">
+                        <rect key="frame" x="57" y="8" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ybI-Vl-eyi" firstAttribute="top" secondItem="GX7-FU-znr" secondAttribute="top" constant="8" id="7Rk-IW-3fk"/>
+                    <constraint firstItem="ybI-Vl-eyi" firstAttribute="leading" secondItem="DIq-RB-1S9" secondAttribute="trailing" constant="16" id="ALU-Ch-Y6c"/>
+                    <constraint firstItem="DIq-RB-1S9" firstAttribute="leading" secondItem="GX7-FU-znr" secondAttribute="leading" constant="16" id="IGB-ba-vRG"/>
+                    <constraint firstAttribute="bottom" secondItem="DIq-RB-1S9" secondAttribute="bottom" constant="8" id="nCD-RO-Mqb"/>
+                    <constraint firstItem="DIq-RB-1S9" firstAttribute="top" secondItem="GX7-FU-znr" secondAttribute="top" constant="8" id="tRg-Nh-hLW"/>
+                    <constraint firstAttribute="bottom" secondItem="ybI-Vl-eyi" secondAttribute="bottom" constant="8" id="yjc-z8-1qK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="0A1-LH-YJZ"/>
+            <connections>
+                <outlet property="iconImage" destination="DIq-RB-1S9" id="sJw-eo-ALV"/>
+                <outlet property="logoutLabel" destination="ybI-Vl-eyi" id="HnQ-B0-A1J"/>
+                <outlet property="nameLabel" destination="ybI-Vl-eyi" id="wB0-5m-BPQ"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="180"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person" width="128" height="128"/>
+    </resources>
+</document>

@@ -44,7 +44,6 @@
             <connections>
                 <outlet property="iconImage" destination="DIq-RB-1S9" id="sJw-eo-ALV"/>
                 <outlet property="logoutLabel" destination="ybI-Vl-eyi" id="HnQ-B0-A1J"/>
-                <outlet property="nameLabel" destination="ybI-Vl-eyi" id="wB0-5m-BPQ"/>
             </connections>
             <point key="canvasLocation" x="149" y="180"/>
         </tableViewCell>

@@ -15,6 +15,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UINib(nibName: String(describing: CardViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: CardViewCell.self))
 
     }
@@ -28,6 +29,29 @@ extension HomeViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        showAlert(at: indexPath.row)
+    }
+    
+    func showAlert(at index: Int) {
+        let alert = UIAlertController(title: "Halo", message: "ini index ke -\(index)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "ok", style: .default) {[weak self] _ in
+            self?.directToDetailViewController()
+        }
+        let cancelAction = UIAlertAction(title: "cancel", style: .cancel)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+    }
+    
+    func directToDetailViewController(){
+        let detailVC = DetailViewController()
+        present(detailVC, animated: true)
     }
 }
 

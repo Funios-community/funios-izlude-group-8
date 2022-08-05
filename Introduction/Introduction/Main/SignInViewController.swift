@@ -11,7 +11,6 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -26,6 +25,10 @@ class SignInViewController: UIViewController {
     
     @IBAction func signUpTapped(_ sender: Any) {
         print("signup")
+        
+        let signupVC = SignupViewController()
+        present(signupVC, animated: true)
+        
     }
     
 }

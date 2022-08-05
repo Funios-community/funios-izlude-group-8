@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
+        
         tableView.register(UINib(nibName: String(describing: HomeTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: HomeTableViewCell.self))
     }
 }
@@ -37,11 +38,6 @@ extension HomeViewController: UITableViewDelegate {
         popupView(at: indexPath.row)
     }
     
-    func popupView(at row: Int) {
-        let popup = UIAlertController(title: "Halo", message: "ini index ke -\(row)", preferredStyle: .alert)
-        popup.addAction(UIAlertAction(title: "ok", style: .default))
-        present(popup, animated: true)
-    }
 }
 
 extension HomeViewController {

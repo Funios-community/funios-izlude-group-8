@@ -11,14 +11,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Introduction" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="115" height="139"/>
+            <rect key="frame" x="0.0" y="0.0" width="245" height="139"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="115" height="139"/>
+                <rect key="frame" x="0.0" y="0.0" width="245" height="139"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iji-11-btB">
-                        <rect key="frame" x="8" y="4" width="99" height="131"/>
+                        <rect key="frame" x="8" y="4" width="229" height="131"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                     </view>
                 </subviews>
@@ -30,8 +30,8 @@
                 <constraint firstAttribute="bottom" secondItem="Iji-11-btB" secondAttribute="bottom" constant="4" id="av8-9q-p9a"/>
                 <constraint firstAttribute="trailing" secondItem="Iji-11-btB" secondAttribute="trailing" constant="8" id="jZN-qE-6wH"/>
             </constraints>
-            <size key="customSize" width="115" height="139"/>
-            <point key="canvasLocation" x="39.855072463768117" y="30.46875"/>
+            <size key="customSize" width="245" height="139"/>
+            <point key="canvasLocation" x="134.05797101449275" y="30.46875"/>
         </collectionViewCell>
     </objects>
     <resources>

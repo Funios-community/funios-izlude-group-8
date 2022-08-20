@@ -11,21 +11,21 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
 
     @IBOutlet weak var tableView: UITableView!
-    
-    var data: [FieldDataModel] = []
-    let loading = UIActivityIndicatorView()
+    var networkHelper: NetworkHelper? = NetworkHelper()
+    var data: [BaseDataModel] = []
+    var loading: UIActivityIndicatorView? = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(loading)
-        loading.startAnimating()
-        loading.changeConstraint(constant: 0, caller: self)
+        self.view.addSubview(loading!)
+        loading?.startAnimating()
+        loading?.changeConstraint(constant: 0, caller: self)
         
-        NetworkHelper.call {[weak self] data in
+        networkHelper?.call(urls: "https://dev-ruangkonstruksi-backend.herokuapp.com/actor/list", httpMethod: .post) {[weak self] data in
             guard let self = self else { return }
             self.data = data?.data ?? []
             self.tableView.reloadData()
-            self.loading.stopAnimating()
-            self.loading.hidesWhenStopped = true
+            self.loading?.stopAnimating()
+            self.loading?.hidesWhenStopped = true
 
             
         }
@@ -38,9 +38,17 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        networkHelper = nil
+        loading = nil
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.nibName, for: indexPath) as! TableViewCell
-        cell.titleContent.text = data[indexPath.row].field
+//        cell.caller = self
+        cell.delegate = self
+        cell.titleContent.text = data[indexPath.row].email
         return cell
     }
     
@@ -52,5 +60,21 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         print(data[indexPath.row])
 
     }
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    deinit {
+        print("tableViewController release")
+    }
+}
+
+extension TableViewController: TableViewProtocol {
+    func showAlert(title: String) {
+        let alert = UIAlertController(title: "Halo", message: title, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default))
+        present(alert, animated: true)
+    }
+    
     
 }

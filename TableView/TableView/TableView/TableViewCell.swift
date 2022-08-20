@@ -7,19 +7,24 @@
 
 import UIKit
 
+protocol TableViewProtocol: AnyObject {
+    func showAlert(title: String)
+}
+
 class TableViewCell: UITableViewCell {
     static let nibName = "TableViewCell"
 
     @IBOutlet weak var titleContent: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    weak var delegate: TableViewProtocol?
+    
+    @IBAction func alertTapped(_ sender: UIButton) {
+        delegate?.showAlert(title: titleContent.text ?? "")
+ 
     }
     
+    
+    deinit {
+        print(String(describing: self))
+    }
 }

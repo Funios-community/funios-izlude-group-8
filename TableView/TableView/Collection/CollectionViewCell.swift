@@ -11,9 +11,6 @@ class CollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var containerCell: UIView!
     @IBOutlet weak var titleCell: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+   
 
 }

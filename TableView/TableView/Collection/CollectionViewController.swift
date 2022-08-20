@@ -12,11 +12,12 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var data: [FieldDataModel] = []
-    
+    var data: [BaseDataModel] = []
+    var networkHelper: NetworkHelper? = NetworkHelper()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        NetworkHelper.call {[weak self] data in
+        networkHelper?.call(urls: "https://dev-ruangkonstruksi-backend.herokuapp.com/field", httpMethod: .get) {[weak self] data in
             if let data = data?.data {
                 self?.data = data
                 self?.collectionView.reloadData()
@@ -45,7 +46,16 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        let vc = TableViewController()
+        present(vc, animated: true)
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        networkHelper = nil
+    }
+    
+    deinit {
+        print(String(describing: self))
+    }
 }

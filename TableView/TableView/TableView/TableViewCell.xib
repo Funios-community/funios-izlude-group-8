@@ -29,10 +29,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfr-WB-giJ">
+                        <rect key="frame" x="244" y="6.5" width="54" height="31"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="alert"/>
+                        <connections>
+                            <action selector="alertTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2V6-yh-eHM"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="4SP-05-1ia" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="19r-nc-5rL"/>
+                    <constraint firstAttribute="trailing" secondItem="vfr-WB-giJ" secondAttribute="trailing" constant="22" id="Je8-eb-hcv"/>
                     <constraint firstItem="zaf-dM-86M" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YUD-QR-t3N"/>
+                    <constraint firstItem="vfr-WB-giJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hzg-T0-Rz0"/>
                     <constraint firstItem="zaf-dM-86M" firstAttribute="leading" secondItem="4SP-05-1ia" secondAttribute="trailing" constant="14" id="j4x-Gf-XDI"/>
                     <constraint firstItem="4SP-05-1ia" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yfb-fC-mjC"/>
                 </constraints>
@@ -41,7 +51,7 @@
             <connections>
                 <outlet property="titleContent" destination="zaf-dM-86M" id="mQ7-Mj-NPQ"/>
             </connections>
-            <point key="canvasLocation" x="125" y="88"/>
+            <point key="canvasLocation" x="-180" y="59"/>
         </tableViewCell>
     </objects>
 </document>
